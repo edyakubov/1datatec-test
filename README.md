@@ -49,3 +49,18 @@ php artisan migrate
 ```bash
 php artisan test
 ```
+
+### Run the server
+
+```bash
+php artisan serve
+```
+
+Test the endpoints with Postman or any other tool.
+curl example:
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/submit \
+-H "Content-Type: application/json" \
+-d '{"name": "John Doe", "email": "johnDoe@data.inc", "message": "Hi there!"}'
+```
